@@ -15,3 +15,5 @@ b = line[1].to_i
 #TODO:  Crie as condições necessárias para calcular o número
 #médio de coxinhas
 
+media = a.to_f / b
+puts "%.2f" % media
