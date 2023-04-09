@@ -15,3 +15,19 @@
 #3. No final de tudo queremos que o programa imprima qual o sist. operacional
 # e o número de bits e as cores do seu PC
 #"Meu PC é ........ bits, possui ......cores e o sist. operacional é .........."
+
+require 'os'
+
+def meu_SO
+    if OS.windows?
+        "Windows"
+    elsif OS.linux?
+        "Linux"
+    elsif OS.mac?
+        "Mac"
+    else
+        "Não identifiquei o Sistema Operacional"
+    end
+end
+
+    puts "Meu PC é #{OS.bits} bits, possui #{OS.cpu_count} cores e o sist. operacional é #{meu_SO}"
